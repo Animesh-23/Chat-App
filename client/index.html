@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat bot</title>
+    <title>Chat App</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Montserrat&family=Neucha&family=Nunito:wght@500&family=Space+Mono&display=swap");
+    </style>
   </head>
   <body>
-    <textarea cols="30" rows="10" id="input"></textarea>
-    <button id="send">Send</button>
-    <div id="output"></div>
+    <div class="main-entry">
+      <h1 class="title">Chat With Anyone Globally</h1>
+      <div class="entry">
+        <h3>Enter your name to chat globally</h3>
+        <form id="enter">
+          <input type="text" id="username" name="username" required /><br />
+          <button id="user-entry" type="submit">Enter</button>
+        </form>
+      </div>
+    </div>
     <script src="./client.js"></script>
   </body>
 </html>
